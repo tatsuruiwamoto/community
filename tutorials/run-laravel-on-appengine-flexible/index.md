@@ -105,7 +105,7 @@ Laravel, you need to manually add the `DB_SOCKET` value to
 1. Start the Cloud SQL proxy and replace `YOUR_INSTANCE_CONNECTION_NAME` with
    the connection name you retrieved in the previous step:
 
-        cloud_sql_proxy -instances=YOUR_INSTANCE_CONNECTION_NAME=tcp:3306
+        ./cloud_sql_proxy -instances=YOUR_INSTANCE_CONNECTION_NAME=tcp:3306
 
 1. Use the MySQL client, or a similar program, to connect to your instance and
   create a database for the application. When prompted, use the root password
